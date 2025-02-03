@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f2f2f2;
+        }
+        table{
+            height: 400px;
+            width: 400px;
+            border-collapse: collapse;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 8px;
+        }
+        th{
+            text-align: center;
+        }
+        td{
+            text-align: right;
+        }
+        tfoot  td{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<!--As Tabelas seguem a seguinte HIERARQUIA
+        TABLE
+            TR = TABLE ROW = LINHAS DA TABELA
+            TD = TABLE DATA = DADOS DA TABELA-->
+<!--ANATOMIA PARA TABELAS GRANDES
+    THEAD
+        tr, th, td
+    
+    TBODY
+        tr, th, td
+    
+    TFOOT
+        tr, th, td-->
+<body>
+    <h1>Minha primeira tabela!</h1>
+    <table> 
+        <thead>
+            <tr>
+                <th scope="col">Animes</th>
+                <th scope="col">Genêro</th>
+            </tr>
+        <tbody>
+            <tr>
+                <th>Blue Lock</th>
+                <td>Esporte</td>
+            </tr>
+
+            <tr>
+                <th>Overlord</th>
+                <td>Isekai</td>
+            </tr>
+
+            <tr>
+                <th>One Piece</th>
+                <td>Aventura</td>
+            </tr>
+
+            <tr>
+                <th>Tokio Ghoul</th>
+                <td>Terror</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Em breve mais indicações de animes</th>
+                <td>...</td>
+            </tr>
+        </tfoot>
+        </thead>
+    </table>
+</body>
+</html>
