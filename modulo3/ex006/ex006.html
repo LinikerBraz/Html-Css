@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
     <style>
+
         body{
             font-family: Arial, Helvetica, sans-serif;
             background-color: #f2f2f2;
         }
+
         table{
             height: 400px;
             width: 400px;
@@ -19,12 +21,38 @@
             border: 1px solid black;
             padding: 8px;
         }
+
         th{
             text-align: center;
         }
+
         td{
             text-align: right;
         }
+
+        caption{
+            color:black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5em;
+            font-weight: bolder;
+        }
+
+        thead th{
+            color: white;
+            background-color: #383838;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+
+        tbody tr:nth-child(even){
+            background-color: lightgray;
+        }
+
         tfoot  td{
             text-align: center;
         }
@@ -47,39 +75,43 @@
 <body>
     <h1>Minha primeira tabela!</h1>
     <table> 
+        <caption>Lista de Animes</caption>
         <thead>
             <tr>
                 <th scope="col">Animes</th>
                 <th scope="col">Genêro</th>
             </tr>
+        </thead>
+
         <tbody>
             <tr>
                 <th>Blue Lock</th>
                 <td>Esporte</td>
             </tr>
-
             <tr>
                 <th>Overlord</th>
                 <td>Isekai</td>
             </tr>
-
             <tr>
                 <th>One Piece</th>
                 <td>Aventura</td>
             </tr>
-
             <tr>
                 <th>Tokio Ghoul</th>
                 <td>Terror</td>
             </tr>
         </tbody>
+
         <tfoot>
             <tr>
                 <th scope="row">Em breve mais indicações de animes</th>
                 <td>...</td>
             </tr>
         </tfoot>
-        </thead>
     </table>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus at similique eum repellendus consequuntur numquam provident molestiae voluptates id assumenda repellat iusto, aliquam quasi exercitationem quod cumque accusantium impedit aut! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, ea. Sit omnis assumenda maxime? Sunt est dolore nisi mollitia, exercitationem ipsum excepturi odit voluptas non quae ea similique maiores dolorem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, expedita vitae facere alias sit exercitationem quia esse temporibus nisi ducimus dolores, modi labore est nesciunt iusto ullam cumque eos consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint voluptatum, incidunt expedita praesentium ipsam eaque maiores a numquam veniam consequuntur voluptate voluptates consequatur ab doloribus accusamus iusto modi nobis aliquam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus at similique eum repellendus consequuntur numquam provident molestiae voluptates id assumenda repellat iusto, aliquam quasi exercitationem quod cumque accusantium impedit aut! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, ea. Sit omnis assumenda maxime? Sunt est dolore nisi mollitia, exercitationem ipsum excepturi odit voluptas non quae ea similique maiores dolorem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, expedita vitae facere alias sit exercitationem quia esse temporibus nisi ducimus dolores, modi labore est nesciunt iusto ullam cumque eos consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint voluptatum, incidunt expedita praesentium ipsam eaque maiores a numquam veniam consequuntur voluptate voluptates consequatur ab doloribus accusamus iusto modi nobis aliquam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus at similique eum repellendus consequuntur numquam provident molestiae voluptates id assumenda repellat iusto, aliquam quasi exercitationem quod cumque accusantium impedit aut! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, ea. Sit omnis assumenda maxime? Sunt est dolore nisi mollitia, exercitationem ipsum excepturi odit voluptas non quae ea similique maiores dolorem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, expedita vitae facere alias sit exercitationem quia esse temporibus nisi ducimus dolores, modi labore est nesciunt iusto ullam cumque eos consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint voluptatum, incidunt expedita praesentium ipsam eaque maiores a numquam veniam consequuntur voluptate voluptates consequatur ab doloribus accusamus iusto modi nobis aliquam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus at similique eum repellendus consequuntur numquam provident molestiae voluptates id assumenda repellat iusto, aliquam quasi exercitationem quod cumque accusantium impedit aut! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, ea. Sit omnis assumenda maxime? Sunt est dolore nisi mollitia, exercitationem ipsum excepturi odit voluptas non quae ea similique maiores dolorem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, expedita vitae facere alias sit exercitationem quia esse temporibus nisi ducimus dolores, modi labore est nesciunt iusto ullam cumque eos consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint voluptatum, incidunt expedita praesentium ipsam eaque maiores a numquam veniam consequuntur voluptate voluptates consequatur ab doloribus accusamus iusto modi nobis aliquam.</p>
 </body>
 </html>
